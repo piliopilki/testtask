@@ -1,0 +1,9 @@
+actor: ApiTester
+modules:
+    enabled:
+        - \Helper\Api
+        - REST:
+            url: http://apigw.lamoda.ru/json/
+            depends: PhpBrowser
+            part: Json
+        - Asserts
